@@ -6,11 +6,11 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN echo 'root:hieudz999' | chpasswd
+RUN echo 'root:kocopassok' | chpasswd
 
 # set hostname
-RUN echo "Hieu-VPS" > /etc/hostname && \
-    echo "127.0.0.1 Hieu-VPS" >> /etc/hosts
+RUN echo "Tai-VPS" > /etc/hostname && \
+    echo "127.0.0.1 Tai-VPS" >> /etc/hosts
 
 EXPOSE 4200
 
